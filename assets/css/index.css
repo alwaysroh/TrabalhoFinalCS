@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,800");
+@import url("fontawesome-all.min.css");
+
+/*Variáveis*/
+:root {
+	--gray-light: #f1f5f9;
+	--text-color: white;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+
+html,
+body {
+	font-size: 1rem;
+	color: var(--text-color);
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+	position: relative;
+}
+
+header a {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+/*Header*/
+header {
+	/* From https://css.glass */
+	background: rgba(104, 18, 163, 0.09);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(104, 18, 163, 0.07);
+
+	height: 5rem;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+
+	display: flex;
+	align-items: center;
+
+	padding-left: 2rem;
+	padding-right: 2rem;
+
+}
+
+/*Main*/
+main {
+	padding-top: 5.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.contain {
+	margin-top: 3rem;
+}
+
+.sub-title {
+	margin: auto;
+	width: 80%;
+	margin-bottom: 3rem;
+}
+
+.sub-title h2 {
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	width: fit-content;
+}
+
+.sub-title .icon {
+	margin-right: 0.5rem;
+}
+
+.icon svg {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.articles {
+	margin-top: 3rem;
+	width: 80%;
+	margin: auto;
+}
+
+.box.excerpt {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 2%;
+}
+
+.articles .box.excerpt img {
+	width: 180px;
+	height: 160px;
+	border-radius: 6px;
+}
+
+.articles .box.excerpt {
+	display: flex;
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+.articles .box.excerpt a {
+	text-decoration: none;
+	display: flex;
+	color: var(--text-color)
+}
+
+.articles .box.excerpt .content {
+	margin-left: 1.5rem;
+}
+
+.articles .box.excerpt .content h1 {
+	margin-top: 0.7rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.articles .box.excerpt .content p {
+	margin-top: 1.0rem;
+	text-align: justify;
+	line-height: 1.5rem;
+}
+
+
+.articles .box.excerpt:not(:last-child) {
+	padding-bottom: 2rem;
+	border-bottom: 1px solid var(--gray-light);
+}
+
+.articles .box.excerpt:not(:first-child) {
+	padding-top: 2rem;
+}
